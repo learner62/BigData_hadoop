@@ -1,0 +1,4 @@
+build_and_run : 
+	javac -classpath hadoop-core-1.2.1.jar -d units2 ProcessUnits2.java
+	jar -cvf units2.jar -C units2/ .
+	hadoop jar units2.jar   hadoop.ProcessUnits2 input2 output2

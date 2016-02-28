@@ -1,0 +1,91 @@
+package hadoop; 
+
+import java.util.*; 
+
+import java.io.IOException; 
+import java.io.IOException; 
+
+import org.apache.hadoop.fs.Path; 
+import org.apache.hadoop.conf.*; 
+import org.apache.hadoop.io.*; 
+import org.apache.hadoop.mapred.*; 
+import org.apache.hadoop.util.*; 
+
+public class ProcessUnits2 
+{ 
+   //Mapper class 
+   public static class E_EMapper extends MapReduceBase implements 
+   Mapper<LongWritable ,/*Input key Type */ 
+   Text,                /*Input value Type*/ 
+   Text,                /*Output key Type*/ 
+   FloatWritable>        /*Output value Type*/ 
+   { 
+      
+      //Map function 
+      public void map(LongWritable key, Text value, 
+      OutputCollector<Text, FloatWritable> output,   
+      Reporter reporter) throws IOException 
+      { 
+
+         String line = value.toString(); 
+
+         String lasttoken = null; 
+         StringTokenizer s = new StringTokenizer(line,"\t ");
+	     // also space included (ErH)
+         String date = s.nextToken(); 
+         
+	 s.nextToken();    // Let's skip time value; example: 00:00:00
+         lasttoken = s.nextToken();
+
+	 // lasttoken contains now temperature in format -10.3
+         float temperature = Float.parseFloat(lasttoken); 
+         output.collect(new Text(date), new FloatWritable(temperature));
+      } 
+   } 
+   
+   //Reducer class 
+   public static class E_EReduce extends MapReduceBase implements 
+   Reducer< Text, LongWritable, Text, FloatWritable > 
+   {  
+      //Reduce function 
+      public void reduce( Text key, Iterator <LongWritable> values, 
+         OutputCollector<Text, FloatWritable> output, Reporter reporter) throws IOException 
+         { 
+	     float sumTemperatures=0, averageTemperature;
+	    int countTemperatures=0;
+            
+            while (values.hasNext()) 
+            { 
+		sumTemperatures += values.next().get();
+		countTemperatures++;
+            } 
+	    
+	    averageTemperature = sumTemperatures / countTemperatures;
+
+            output.collect(key, new FloatWritable(averageTemperature)); 
+         } 
+   }  
+   
+   
+   //Main function 
+   public static void main(String args[])throws Exception 
+   { 
+      JobConf conf = new JobConf(ProcessUnits2.class); 
+      
+      conf.setJobName("VuorokaudenKeskilampotila"); 
+      conf.setOutputKeyClass(Text.class);
+      conf.setOutputValueClass(FloatWritable.class); 
+      conf.setMapperClass(E_EMapper.class); 
+      conf.setCombinerClass(E_EReduce.class); 
+      conf.setReducerClass(E_EReduce.class); 
+      conf.setInputFormat(TextInputFormat.class); 
+      conf.setOutputFormat(TextOutputFormat.class); 
+
+      FileInputFormat.setInputPaths(conf, new Path(args[0])); 
+      FileOutputFormat.setOutputPath(conf, new Path(args[1])); 
+      
+      System.out.println(">>> line: " );
+
+      JobClient.runJob(conf); 
+   } 
+} 
