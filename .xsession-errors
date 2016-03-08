@@ -1,0 +1,20 @@
+pci id for fd 4: 80ee:beef, driver (null)
+libGL error: core dri or dri2 extension not found
+libGL error: failed to load driver: vboxvideo
+Script for ibus started at run_im.
+Script for auto started at run_im.
+Script for default started at run_im.
+init: gnome-session (Unity) main process (1969) terminated with status 1
+init: unity-panel-service main process (1972) terminated with status 1
+init: indicator-bluetooth main process (2002) killed by TERM signal
+init: indicator-power main process (2006) killed by TERM signal
+init: indicator-datetime main process (2009) killed by TERM signal
+init: indicator-printers main process (2015) killed by TERM signal
+init: indicator-session main process (2017) killed by TERM signal
+init: unity-settings-daemon main process (1959) terminated with status 1
+init: hud main process (1964) killed by TERM signal
+init: indicator-application main process (2032) terminated with status 1
+init: Disconnected from notified D-Bus bus
+init: job indicator-messages failed to stop
+init: job at-spi2-registryd failed to stop
+init: job indicator-sound failed to stop
