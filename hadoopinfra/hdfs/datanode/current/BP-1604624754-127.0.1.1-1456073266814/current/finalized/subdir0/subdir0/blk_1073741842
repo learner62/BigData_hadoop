@@ -1,1 +1,0 @@
-VjobId=job_1456155392759_0002,submitTime=1456158246517,launchTime=1456158257356,firstMapTaskLaunchTime=1456158259906,firstReduceTaskLaunchTime=0,finishTime=1456158317544,resourcesPerMap=1024,resourcesPerReduce=1024,numMaps=2,numReduces=1,user=hadoop,queue=default,status=FAILED,mapSlotSeconds=98,reduceSlotSeconds=0,jobName=max_eletricityunits

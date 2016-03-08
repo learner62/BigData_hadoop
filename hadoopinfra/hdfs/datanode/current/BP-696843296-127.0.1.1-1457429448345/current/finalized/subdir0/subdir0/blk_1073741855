@@ -1,0 +1,1 @@
+jjobId=job_1457429504935_0006,submitTime=1457453583357,launchTime=1457453593414,firstMapTaskLaunchTime=1457453595910,firstReduceTaskLaunchTime=1457453603721,finishTime=1457453609548,resourcesPerMap=1024,resourcesPerReduce=1024,numMaps=1,numReduces=1,user=hadoop,queue=default,status=SUCCEEDED,mapSlotSeconds=5,reduceSlotSeconds=5,jobName=VuorokaudenKeskilampotila
