@@ -1675,3 +1675,250 @@ history|grep git
 git push BigData_hadoop_github
 #1457457446
 exit
+#1457457632
+h
+#1457457653
+git push BigData_hadoop_github
+#1457457742
+ls -ltrd *
+#1457457780
+h|grep git
+#1457457793
+ls -ltrd *
+#1457457799
+git add usr_local_hadoop_etc_hadoop/
+#1457457821
+git commit  -m "pseudo distributed version"
+#1457457853
+less makefile
+#1457457963
+h|grep git
+#1457457979
+git status
+#1457458014
+git commit -a
+#1457458046
+git staus
+#1457458049
+git status
+#1457458069
+git add makefile
+#1457458183
+cd
+#1457458188
+echo hei
+#1457458194
+echo hei>README.txt
+#1457458198
+git status
+#1457458215
+git add README.txt 
+#1457458216
+git status
+#1457458224
+git status makefile
+#1457458238
+git branch 
+#1457458242
+git branch master 
+#1457458256
+git switch
+#1457458263
+git --help
+#1457458373
+git checkout master
+#1457458380
+git status
+#1457458403
+git add * .??*
+#1457458409
+git status
+#1457458424
+git status|less
+#1457458441
+emacs makefile
+#1457458452
+pwd
+#1457458464
+git checkout 
+#1457458471
+git status
+#1457458529
+git
+#1457458554
+git checkout
+#1457458560
+git
+#1457458589
+h|grep git
+#1457458609
+git checkout pseudo_distributed
+#1457458614
+ls
+#1457458617
+less makefile
+#1457458661
+git commit -a -m 'Trying to commit all changes to pseudo distributed'
+#1457458757
+git status
+#1457458788
+emacs README.txt
+#1457458795
+git status
+#1457458861
+git commit -a
+#1457458873
+git status
+#1457458901
+git status -s
+#1457458922
+git diff
+#1457459025
+history|grep git
+#1457459049
+HISTTIMEFORMAT="%d/%m/%y %T "
+#1457459051
+history|grep git
+#1457459076
+git push BigData_hadoop_github
+#1457459115
+git push 
+#1457459169
+pwd
+#1457459177
+git status
+#1457459228
+git push origin pseudo_distributed
+#1457459256
+git push BigData_hadoop_github pseudo_distributed
+#1457459504
+h|grep git
+#1457459853
+pwd
+#1457459854
+ls
+#1457459905
+cd /temp
+#1457459909
+cd /media
+#1457459911
+cd sf_Temp/
+#1457459911
+ls
+#1457460100
+exit
+start-dfs.sh
+start-yarn.sh
+h
+h|grep make
+make >& make.out &
+tail -f make.out 
+less make.out 
+stop-all.sh 
+stop-dfs.sh 
+stop-yarn.sh 
+start-dfs.sh 
+start-yarn.sh 
+make >& make.out &
+tail -f make.out 
+less make.out
+cd .ssh/
+ls
+ls -l
+stop-dfs.sh 
+ssh localhost
+cd
+ssh localhost
+ssh-keygen -t rsa -P ""
+cat /user/hadoop/.ssh/id_rsa.pub >>/user/hadoop/.ssh/authorized_keys 
+ssh localhost
+less make.out
+cd /usr/local/hadoop/
+ls
+cd logs
+ls -ltrd *
+less hadoop-hadoop-datanode-erkki-VirtualBox.log 
+less yarn-hadoop-resourcemanager-erkki-VirtualBox.log 
+grep repl *
+grep repl *|less
+cd / 
+find . -name WordCount.java
+cd
+pwd
+less WordCount.java
+bin/hadoop com.sun.tools.javac.Main WordCount.java
+hadoop com.sun.tools.javac.Main WordCount.java
+cd /usr/local/hadoop/share/hadoop/mapreduce/sources/
+ls -ltrd *
+/usr/local/jdk1.8.0_74/bin/jar -xf hadoop-mapreduce-examples-2.7.2-sources.jar org/apache/hadoop/examples/WordCount.java
+ls -ltrd *
+cd org/
+ls
+cd apache/
+ls
+cd hadoop/
+ls
+cd examples/
+ls
+javac -classpath hadoop-core-1.2.1.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-cli-1.2.jar -d units3 WordCount.java
+pushd ~
+ls
+diff WordCount.java /usr/local/hadoop/share/hadoop/mapreduce/sources/org/apache/hadoop/examples/WordCount.java 
+cd
+javac -classpath hadoop-core-1.2.1.jar:/usr/local/hadoop/share/hadoop/common/lib/commons-cli-1.2.jar -d units3 WordCount.java
+ls
+ls -ltrd *
+ls units3
+ls units3/org/
+ls units3/org/apache/
+ls
+ls units3/org/apache/
+ls units3/org/apache/hadoop/
+ls units3/org/apache/hadoop/examples/
+less makefile
+ls -ltrd *.jar
+jar cf wc.jar units3/org/apache/hadoop/examples/WordCount/*
+jar cf wc.jar units3/org/apache/hadoop/examples/WordCount/*.class
+ls units3/org/apache/hadoop/examples/WordCount/*.class
+ls units3/org/apache/hadoop/examples/WordCount/
+ls units3/org/apache/hadoop/examples/
+jar cf wc.jar units3/org/apache/hadoop/examples/*.class
+ls -ltrd *
+hadoop fs -ls /user/hadoop
+cd /usr/local/hadoop
+ls
+cd etc/
+ls
+cd hadoop/
+ls
+cd ..
+ls
+cd ..
+ls
+find . -name WordCount.java
+cd share/hadoop/mapreduce/sources/org/apache/hadoop/examples/
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd sou
+cd sources
+lös
+ls
+cd mapreduce/
+ls
+cd sources/
+ls
+jar tvf hadoop-mapreduce-examples-2.7.2-sources.jar 
+jar tvf hadoop-mapreduce-examples-2.7.2-sources.jar |less
+ls
+hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar  wordcount input output
+cd
+hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar  wordcount input output
+stop-dfs.sh 
+stop-yarn.sh 
+hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar  wordcount input output
+exit
