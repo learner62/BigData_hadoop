@@ -11,6 +11,8 @@ import org.apache.hadoop.io.*;
 import org.apache.hadoop.mapred.*; 
 import org.apache.hadoop.util.*; 
 
+//import org.apache.commons.logging.*; // ErH/15.3.2016
+
 public class ProcessUnits 
 { 
    //Mapper class 
@@ -20,6 +22,8 @@ public class ProcessUnits
    Text,                /*Output key Type*/ 
    IntWritable>        /*Output value Type*/ 
    { 
+
+       //public static final Log log = LogFactory.getLog(E_EMapper.class); // ErH/15.3.2016
       
       //Map function 
       public void map(LongWritable key, Text value, 
@@ -35,6 +39,8 @@ public class ProcessUnits
             {
                lasttoken=s.nextToken();
             } 
+
+	 System.out.println("!!!!!!!!!!! " + lasttoken );
             
          int avgprice = Integer.parseInt(lasttoken); 
          output.collect(new Text(year), new IntWritable(avgprice)); 

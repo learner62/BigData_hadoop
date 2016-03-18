@@ -1,0 +1,157 @@
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.OneConf'
+Successfully activated service 'com.ubuntu.OneConf'
+WARNING:oneconf.hosts:Error in loading other_hosts file: [Errno 2] No such file or directory: '/user/hadoop/.cache/oneconf/7fc468b5717a3e280485bc0a56a23efa/other_hosts'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.SoftwareCenterDataProvider'
+Successfully activated service 'com.ubuntu.SoftwareCenterDataProvider'
+Activating service name='org.freedesktop.Geoclue.Master'
+Successfully activated service 'org.freedesktop.Geoclue.Master'
+** Message: GSettings key 'gps-baudrate' initialised to '0'
+** Message: GSettings key 'gps-device' initialised to '(null)'
+Activating service name='org.freedesktop.Geoclue.Providers.UbuntuGeoIP'
+Successfully activated service 'org.freedesktop.Geoclue.Providers.UbuntuGeoIP'
+No handlers could be found for logger "softwarecenter.region"
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+/usr/lib/python2.7/dist-packages/gi/overrides/GLib.py:523: Warning: Source ID 23 was not found when attempting to remove it
+  super(MainLoop, self).run()
+/usr/lib/python2.7/dist-packages/gi/overrides/GLib.py:535: Warning: Source ID 20 was not found when attempting to remove it
+  return super(MainContext, self).iteration(may_block)
+Activating service name='com.canonical.Unity.Webapps.Service'
+Successfully activated service 'com.canonical.Unity.Webapps.Service'
+** Message: Investigating webapp: unity-webapps-common 
+
+
+** (process:4021): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-qml 
+
+
+** (process:4021): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-qml-doc 
+
+
+** (process:4021): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-qml-examples 
+
+
+** (process:4021): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-service 
+
+
+** (process:4021): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-amazoncloudreader 
+
+** Message: Investigating webapp: unity-webapps-bbcnews 
+
+** Message: Investigating webapp: unity-webapps-cnn-news 
+
+** Message: Investigating webapp: unity-webapps-deezer 
+
+** Message: Investigating webapp: unity-webapps-dev 
+
+
+** (process:4021): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-deviantart 
+
+** Message: Investigating webapp: unity-webapps-facebookmessenger 
+
+** Message: Investigating webapp: unity-webapps-googlenews 
+
+** Message: Investigating webapp: unity-webapps-googleplusgames 
+
+
+** (process:4021): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-grooveshark 
+
+** Message: Investigating webapp: unity-webapps-hulu-player 
+
+** Message: Investigating webapp: unity-webapps-lastfm-radio 
+
+** Message: Investigating webapp: unity-webapps-launchpad 
+
+** Message: Investigating webapp: unity-webapps-librefm 
+
+** Message: Investigating webapp: unity-webapps-linkedin 
+
+** Message: Investigating webapp: unity-webapps-mail-ru 
+
+** Message: Investigating webapp: unity-webapps-newsblur 
+
+** Message: Investigating webapp: unity-webapps-pandora 
+
+** Message: Investigating webapp: unity-webapps-pandora-com 
+
+** Message: Investigating webapp: unity-webapps-qml-autopilot 
+
+
+** (process:4021): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-qq-mail 
+
+** Message: Investigating webapp: unity-webapps-reddit 
+
+** Message: Investigating webapp: unity-webapps-tumblr 
+
+** Message: Investigating webapp: unity-webapps-twitter 
+
+** Message: Investigating webapp: unity-webapps-vkcom 
+
+** Message: Investigating webapp: unity-webapps-wordpress 
+
+** Message: Investigating webapp: unity-webapps-wordpress-com 
+
+** Message: Investigating webapp: unity-webapps-yahoonews 
+
+** Message: Investigating webapp: unity-webapps-yandex-music 
+
+** Message: Investigating webapp: unity-webapps-yandexmail 
+
+** Message: Investigating webapp: unity-webapps-yandexmusic 
+
+** Message: Investigating webapp: unity-webapps-yandexnews 
+
+** Message: Investigating webapp: unity-webapps-qml 
+
+
+** (process:4021): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-qml-examples 
+
+
+** (process:4021): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-service 
+
+
+** (process:4021): WARNING **: Found newline before all of metadata, skipping app
+** Message: Investigating webapp: unity-webapps-gmail 
+
+** Message: Investigating webapp: unity-webapps-googlecalendar 
+
+** Message: Investigating webapp: unity-webapps-googledocs 
+
+** Message: Investigating webapp: unity-webapps-googleplus 
+
+** Message: Investigating webapp: unity-webapps-livemail 
+
+** Message: Investigating webapp: unity-webapps-yahoomail 
+
+** Message: Investigating webapp: unity-webapps-youtube 
+
+
+(notify-osd:2069): Gdk-WARNING **: notify-osd: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(bamfdaemon:1846): Gdk-WARNING **: bamfdaemon: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(zeitgeist-fts:2270): GLib-GIO-WARNING **: Error releasing name org.gnome.zeitgeist.SimpleIndexer: The connection is closed
+
+** (zeitgeist-fts:2270): WARNING **: zeitgeist-fts.vala:252: The connection is closed
+
+** (ubuntu-geoip-provider:24840): WARNING **: SIGTERM recieved
+g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.
+g_dbus_connection_real_closed: Remote peer vanished with error: Underlying GIOStream returned 0 bytes on an async read (g-io-error-quark, 0). Exiting.

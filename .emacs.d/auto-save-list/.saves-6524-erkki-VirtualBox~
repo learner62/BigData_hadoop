@@ -1,0 +1,4 @@
+/usr/local/hadoop/sbin/hadoop-daemons.sh
+/usr/local/hadoop/sbin/#hadoop-daemons.sh#
+/usr/local/hadoop/sbin/start-dfs.sh
+/usr/local/hadoop/sbin/#start-dfs.sh#

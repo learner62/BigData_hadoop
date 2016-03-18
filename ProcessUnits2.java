@@ -18,6 +18,7 @@ import org.apache.hadoop.util.GenericOptionsParser;
 
 // Added by ErH/26.2.2016:
 import org.apache.commons.cli.Options;
+import org.apache.commons.logging.*;
 
 public class ProcessUnits2 
 { 
@@ -33,6 +34,8 @@ public class ProcessUnits2
 				     //   FloatWritable>        /*Output value Type*/ 
 
    { 
+       public static final Log log = LogFactory.getLog(E_EMapper.class);
+
        private FloatWritable temperature = new FloatWritable();
        private Text date = new Text();       
 
@@ -43,7 +46,6 @@ public class ProcessUnits2
       { 
 	  StringTokenizer dateTimeTemperatures = new StringTokenizer(value.toString());
 	     // also space included (ErH)
-
 
 	  while(dateTimeTemperatures.hasMoreTokens()) {
 	      date.set(dateTimeTemperatures.nextToken());
@@ -83,6 +85,8 @@ Reducer< Text, LongWritable, Text, FloatWritable > */
             } 
 	    
 	    averageTemperature = sumTemperatures / countTemperatures;
+
+	  System.out.println("!!!!!! " + key);
 
             //output.collect(key, new FloatWritable(averageTemperature)); 
 	    result.set(averageTemperature);
